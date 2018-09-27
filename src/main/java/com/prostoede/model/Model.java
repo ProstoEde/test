@@ -1,8 +1,8 @@
 package com.prostoede.model;
 
 /**
- * @author ProstoEde 27.09.2018
  * Класс Model
+ * @author ProstoEde 27.09.2018
  */
 
 public class Model {

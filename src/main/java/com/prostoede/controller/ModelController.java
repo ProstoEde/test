@@ -1,4 +1,5 @@
 package com.prostoede.controller;
+
 import com.prostoede.model.Model;
 import com.prostoede.service.ModelService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 /**
- * @author ProstoEde 27.09.2018
  * Класс ModelController
+ * @author ProstoEde 27.09.2018
  */
 @RestController
 public class ModelController {
@@ -34,6 +35,7 @@ public class ModelController {
         modelAndView.setViewName("list");
         return modelAndView;
     }
+
     //Страница добавить, после нажатия кнопки переходим к check
     @RequestMapping(value = "/add")
     protected ModelAndView model(){
@@ -41,7 +43,6 @@ public class ModelController {
         modelAndView.addObject("userJSP",new Model());
         modelAndView.setViewName("add");
         return modelAndView;
-
     }
 
     //Добавляем запись в бд и возвращаемся на главную страницу
@@ -55,19 +56,20 @@ public class ModelController {
         System.out.println(model);
         return modelAndView;
     }
+
     //Вывод списка имен из бд по поиску
     @RequestMapping(value = "/sort")
     public ModelAndView getListSort(@RequestParam(value = "name",required = false) String name,
                                     @RequestParam(value = "id",required = false) Integer  id ){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("list");
-        if(id!=null&&name!=null&&!name.isEmpty()){
+        if(id != null && name != null && !name.isEmpty()){
             List<Model> list = modelService.getListSort(id, name);
             modelAndView.addObject("userJSP", list);
-        }else if (id == null&&name!=null&&!name.isEmpty()) {
+        }else if (id == null && name != null && !name.isEmpty()) {
                 List<Model> list = modelService.getListSortName(name);
                 modelAndView.addObject("userJSP", list);
-        }else if(id!=null){
+        }else if(id != null){
             List<Model> list = modelService.getListSortId(id);
             modelAndView.addObject("userJSP", list);
         }
