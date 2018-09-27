@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - model@localhost" uuid="7f43fdc5-fcbc-48b3-af6f-fbf8a4449f6f">
+    <database-info product="MySQL" version="8.0.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="model">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="bookmaneger"/>
+      <schema id="3" name="books"/>
+      <schema id="4" name="books1"/>
+      <schema id="5" name="bookshop"/>
+      <schema id="6" name="db_prostoede"/>
+      <schema id="7" name="information_schema"/>
+      <schema id="8" name="mkyong"/>
+      <schema id="9" name="mydbtest"/>
+      <schema id="10" name="mysql"/>
+      <schema id="11" name="performance_schema"/>
+      <schema id="12" name="prostoede"/>
+      <schema id="13" name="ranga"/>
+      <schema id="14" name="sakila"/>
+      <schema id="15" name="spring_security_app"/>
+      <schema id="16" name="sys"/>
+      <schema id="17" name="university"/>
+      <schema id="18" name="user"/>
+      <schema id="19" name="world"/>
+      <table id="20" parent="1" name="person"/>
+      <column id="21" parent="20" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="22" parent="20" name="NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="23" parent="20" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - testmodel@localhost" uuid="071e8fe3-ef42-4fea-a4f1-7996a470f900">
+    <database-info product="MySQL" version="8.0.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="testmodel">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="bookmaneger"/>
+      <schema id="3" name="books"/>
+      <schema id="4" name="books1"/>
+      <schema id="5" name="bookshop"/>
+      <schema id="6" name="db_prostoede"/>
+      <schema id="7" name="information_schema"/>
+      <schema id="8" name="mkyong"/>
+      <schema id="9" name="model"/>
+      <schema id="10" name="mydbtest"/>
+      <schema id="11" name="mysql"/>
+      <schema id="12" name="new_schema"/>
+      <schema id="13" name="performance_schema"/>
+      <schema id="14" name="prostoede"/>
+      <schema id="15" name="ranga"/>
+      <schema id="16" name="sakila"/>
+      <schema id="17" name="spring_security_app"/>
+      <schema id="18" name="sys"/>
+      <schema id="19" name="university"/>
+      <schema id="20" name="user"/>
+      <schema id="21" name="world"/>
+      <table id="22" parent="1" name="person"/>
+      <column id="23" parent="22" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="24" parent="22" name="NAME">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="25" parent="22" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
