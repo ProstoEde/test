@@ -47,7 +47,7 @@ public class ModelServiceImpl implements ModelService {
     @Override
     @Transactional
     public List<Model> getListSortName(String name) {
-        String sql = "select * from person WHERE NAME = '"+name+"' ";
+        String sql = "select * from person WHERE NAME LIKE '"+name+"%' ";
         return jdbcTemplate.query(sql, ROW_MAPPER);
     }
 
