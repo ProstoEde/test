@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="person">
+        <column>ID</column>
+        <column>NAME</column>
+        <row>
+            <value>1</value>
+            <value>Ede</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>Smitty</value>
+        </row>
+        <row>
+            <value>3</value>
+            <value>Тестовая модель 1</value>
+        </row>
+        <row>
+            <value>4</value>
+            <value>Tommy</value>
+        </row>
+    </table>
+</dataset>
